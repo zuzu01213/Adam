@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { MenuIcon } from 'lucide-react'
+import { UserButton } from '@clerk/nextjs'
 export const Navbar = async () => {
   return (
     <header className='fixed top-0 left-0 right-0 py-4 px-4 bg-black/40
@@ -57,7 +58,9 @@ export const Navbar = async () => {
             {true ? 'Dashboard' : 'Get Started'}
           </span>
         </Link>
-        <MenuIcon className="md" />
+        
+        <UserButton/>
+        <MenuIcon className="md:hidden" />
       </aside>
     </header>
   )

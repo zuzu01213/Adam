@@ -6,9 +6,10 @@ import { LampComponent } from "@/components/global/lamp";
 import { Navbar } from "@/components/global/Navbar";
 import { Button } from "@/components/ui/button";
 import { clients, products } from "@/lib/constants";
-import Image from "next/image";
+
 import { CheckIcon } from 'lucide-react'
 import { pricingPlans } from "../lib/constants";
+
 export default function Home() {
   return (
     <main className="flex items-center justify-center flex-col">

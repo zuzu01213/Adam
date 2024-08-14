@@ -1,10 +1,10 @@
-// import Category from '@/components/icons/category'
-// import Logs from '@/components/icons/clipboard'
-// import Templates from '@/components/icons/cloud_download'
-// import Home from '@/components/icons/home'
-// import Payment from '@/components/icons/payment'
-// import Settings from '@/components/icons/settings'
-// import Workflows from '@/components/icons/workflows'
+import Category from '@/components/icons/category'
+import Logs from '@/components/icons/clipboard'
+import Templates from '@/components/icons/cloud_download'
+import Home from '@/components/icons/home'
+import Payment from '@/components/icons/payment'
+import Settings from '@/components/icons/settings'
+import Workflows from '@/components/icons/workflows'
 // import { Connection } from './types'
 
 export const clients = [...new Array(10)].map((client, index) => ({
@@ -14,34 +14,35 @@ export const pricingPlans = [
   {
     name: "Hobby",
     price: "$0",
-    description: "Get a glimpse of what our software is capable of. Just a heads up, you'll never leave us after this!",
+    description: "Dip your toes in the water and discover the power of our platform. Fair warning: once you start, you won’t want to stop.",
     features: [
-      "3 Free automations",
-      "100 tasks per month",
-      "Two-step Actions"
+      "3 Free Automations",
+      "100 Tasks/Month",
+      "Two-Step Actions"
     ]
   },
   {
     name: "Pro Plan",
     price: "$29",
-    description: "Take your automation to the next level with our Pro Plan.",
+    description: "Level up your automation game. Our Pro Plan gives you the tools to automate with confidence and efficiency.",
     features: [
-      "Unlimited automations",
-      "500 tasks per month",
-      "Multi-step Actions"
+      "Unlimited Automations",
+      "500 Tasks/Month",
+      "Multi-Step Actions"
     ]
   },
   {
     name: "Unlimited",
     price: "$99",
-    description: "Unlock the full potential with unlimited everything.",
+    description: "Unleash the full power of our platform. With unlimited everything, you’ll have the freedom to automate without limits.",
     features: [
-      "Unlimited automations",
-      "Unlimited tasks",
-      "Priority support"
+      "Unlimited Automations",
+      "Unlimited Tasks",
+      "Priority Support"
     ]
   }
 ];
+
 export const products = [
   {
     title: 'Moonbeam',
@@ -123,15 +124,15 @@ export const products = [
   },
 ]
 
-// export const menuOptions = [
-//   { name: 'Dashboard', Component: Home, href: '/dashboard' },
-//   { name: 'Workflows', Component: Workflows, href: '/workflows' },
-//   { name: 'Settings', Component: Settings, href: '/settings' },
-//   { name: 'Connections', Component: Category, href: '/connections' },
-//   { name: 'Billing', Component: Payment, href: '/billing' },
-//   { name: 'Templates', Component: Templates, href: '/templates' },
-//   { name: 'Logs', Component: Logs, href: '/logs' },
-// ]
+export const menuOptions = [
+  { name: 'Dashboard', Component: Home, href: '/dashboard' },
+  { name: 'Workflows', Component: Workflows, href: '/workflows' },
+  { name: 'Settings', Component: Settings, href: '/settings' },
+  { name: 'Connections', Component: Category, href: '/connections' },
+  { name: 'Billing', Component: Payment, href: '/billing' },
+  { name: 'Templates', Component: Templates, href: '/templates' },
+  { name: 'Logs', Component: Logs, href: '/logs' },
+]
 
 export const EditorCanvasDefaultCardTypes = {
   Email: { description: 'Send and email to a user', type: 'Action' },

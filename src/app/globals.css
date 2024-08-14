@@ -19,10 +19,52 @@
   );
 }
 .border-gradient {
-  border: 2px solid;
-  border-image: linear-gradient(90deg, #FF7E5F, #FEB47B);
+  border: 2px solid transparent;
   border-image-slice: 1;
+  border-image-source: conic-gradient(from 90deg at 50% 50%, #E2CBFF 0%, #393BB2 50%, #E2CBFF 100%);
+  
+  /* Animation */
+  position: relative; /* Required for absolute children if needed */
+  
+  background: conic-gradient(from 90deg at 50% 50%, #E2CBFF 0%, #393BB2 50%, #E2CBFF 100%);
 }
+
+/* Add the spin animation */
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.hover-button {
+  color: white;
+  background-color: #9F54FF;
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  transform: translateZ(0); /* Optimize performance */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.hover-button:hover {
+  background: linear-gradient(to right, #9F54FF, #6a2dc5, #511b98);
+  border-color: white;
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.hover-button:active {
+  background-color: #3a1370;
+  border-color: #6a2dc5;
+  transform: scale(0.95);
+  box-shadow: none;
+}
+
+.hover-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(159, 84, 255, 0.6);
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
